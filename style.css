@@ -1,0 +1,23 @@
+ul{ display: flex;list-style: none; font-size:100px;display: flex; justify-content: center}
+li{margin: 5px;padding: 10px;}
+
+li::before {content: ""; width: 100%;
+    border-top:10px solid #fff;
+    display: block; transition: all 0.2s;
+}
+li:hover:before{
+    width: 100%; border-top: 10px solid green;animation:name 1s;
+
+}
+@keyframes name {
+    0%{margin-left: 0px;}
+    50%{margin-left:10px}
+    100%{margin-left:0px}
+}
+
+li::after {content: ""; width: 0px;
+border-top: 10px solid #fff; display: block;border-top:10px solid #fff; transition: 0.5s ease-in; margin:0 auto
+}
+li:hover:after{
+    width: 100%;border-top:10px solid red;
+}
